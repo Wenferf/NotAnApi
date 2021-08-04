@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var things = ["First Thing", "Second Thing", "Third Thing", "Fourth Thing", "Fifth Thing"]
+    @State private var listFoods =
+        [ListFoods(label: "Apple", calorie: 3, fat: 3.0),
+             ListFoods(label: "Orange", calorie: 3, fat: 3.0),
+             ListFoods(label: "Egg", calorie: 3, fat: 3.0)]
     var body: some View {
         NavigationView {
             List {
-                
-                ForEach(things, id: \.self) { thing in
-                    Text(thing)
-                }
+                ForEach(listFoods) { item in
+                                   Text(item.label)
+                                }
                 .onMove(perform: { indices, newOffset in
-                    things.move(fromOffsets: indices, toOffset: newOffset)
+                    listFoods.move(fromOffsets: indices, toOffset: newOffset)
                 })
                 .onDelete(perform: { indexSet in
-                    things.remove(atOffsets: indexSet)
+                    listFoods.remove(atOffsets: indexSet)
                 })
                 
             }
-            .navigationBarTitle("Things", displayMode: .inline)
+            .navigationBarTitle("different foods")
             .navigationBarItems(leading: EditButton())
         }
     }
@@ -36,7 +38,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ToDoItem: Identifiable {
+struct ListFoods: Identifiable {
     var id = UUID()
     var label = String()
     var calorie = Int()
