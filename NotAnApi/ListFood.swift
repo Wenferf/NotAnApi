@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class ToDoList: ObservableObject {
+class ListFood: ObservableObject {
     @Published var items =
         [ListFoods(label: "Apple", calorie: 3, fat: 3.0),
          ListFoods(label: "Orange", calorie: 3, fat: 3.0),
