@@ -13,6 +13,7 @@
 		BF46CB1326BA6A0400ABE887 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF46CB1226BA6A0400ABE887 /* Preview Assets.xcassets */; };
 		BF46CB1E26BA6A0500ABE887 /* NotAnApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46CB1D26BA6A0500ABE887 /* NotAnApiTests.swift */; };
 		BF46CB2926BA6A0500ABE887 /* NotAnApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46CB2826BA6A0500ABE887 /* NotAnApiUITests.swift */; };
+		BF46CB3726BA6C8100ABE887 /* ListFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46CB3626BA6C8100ABE887 /* ListFood.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BF46CB2426BA6A0500ABE887 /* NotAnApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotAnApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF46CB2826BA6A0500ABE887 /* NotAnApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAnApiUITests.swift; sourceTree = "<group>"; };
 		BF46CB2A26BA6A0500ABE887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF46CB3626BA6C8100ABE887 /* ListFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFood.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				BF46CB0B26BA6A0100ABE887 /* NotAnApiApp.swift */,
 				BF46CB0D26BA6A0100ABE887 /* ContentView.swift */,
+				BF46CB3626BA6C8100ABE887 /* ListFood.swift */,
 				BF46CB0F26BA6A0400ABE887 /* Assets.xcassets */,
 				BF46CB1426BA6A0400ABE887 /* Info.plist */,
 				BF46CB1126BA6A0400ABE887 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF46CB0E26BA6A0100ABE887 /* ContentView.swift in Sources */,
+				BF46CB3726BA6C8100ABE887 /* ListFood.swift in Sources */,
 				BF46CB0C26BA6A0100ABE887 /* NotAnApiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
